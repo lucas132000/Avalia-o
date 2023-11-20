@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loja de Eletrodomésticos</title>
+    <link rel="stylesheet" href="{{ url_for('.static', filename='styles.css') }}">
+    
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo à Loja de Eletrodomésticos</h1>
+        <nav>
+            <ul>
+                <li><a href="{{ url_for('cadastro_cliente') }}">Cadastro de Clientes</a></li>
+                <li><a href="{{ url_for('cadastro_produto') }}">Cadastro de Produtos</a></li>
+                <li><a href="{{ url_for('ver_clientes') }}">Ver Clientes</a></li>
+                <li><a href="{{ url_for('ver_produtos') }}">Ver Produtos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+</body>
+</html>
+
